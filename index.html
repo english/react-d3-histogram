@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js"></script>
+  <style>
+    .react-d3-histogram__bar rect {
+      fill: steelblue;
+      shape-rendering: crispEdges;
+    }
+
+    .react-d3-histogram__bar text {
+      fill: #fff;
+    }
+
+    .react-d3-histogram__x-axis path,
+    .react-d3-histogram__x-axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello</h1>
+  <div id="app"></div>
+  <script src="histogram.build.js"></script>
+  <script>
+    React.render(
+      React.createElement(
+        Histogram,
+        {
+          data: d3.range(1000).map(d3.random.bates(10)),
+          width: 446,
+          height: 150
+        }
+      ),
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html
