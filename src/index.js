@@ -1,3 +1,6 @@
+var React = require("react");
+var d3 = require("d3");
+
 function getYScale(data, height) {
   return d3.scale.linear().
     domain([0, d3.max(data, (d) => d.y)]).

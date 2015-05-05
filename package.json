@@ -19,5 +19,9 @@
   "homepage": "https://github.com/english/react-d3-histogram",
   "devDependencies": {
     "babel": "^5.2.15"
+  },
+  "dependencies": {
+    "d3": "^3.5.5",
+    "react": "^0.13.2"
   }
 }
