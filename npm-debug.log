@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.1.7
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/jamieenglish/projects/react-d3-histogram',
+8 silly cache add   type: 'directory' }
+9 verbose tar pack [ '/Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/jamieenglish/projects/react-d3-histogram' ]
+10 verbose tarball /Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package.tgz
+11 verbose folder /Users/jamieenglish/projects/react-d3-histogram
+12 info prepublish react-d3-histogram@1.0.0
+13 verbose unsafe-perm in lifecycle true
+14 verbose addLocalTarball adding from inside cache /Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package.tgz
+15 silly cache afterAdd react-d3-histogram@1.0.0
+16 verbose afterAdd /Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package/package.json written
+18 silly publish { name: 'react-d3-histogram',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Histogram component entirely rendered by React, using D3 to compute sizes, positions etc.',
+18 silly publish   main: 'dist/index.js',
+18 silly publish   scripts:
+18 silly publish    { compile: 'babel --stage 0 --out-dir dist src',
+18 silly publish      prepublish: 'npm run compile' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/english/react-d3-histogram.git' },
+18 silly publish   author: { name: 'Jamie English' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/english/react-d3-histogram/issues' },
+18 silly publish   homepage: 'https://github.com/english/react-d3-histogram',
+18 silly publish   devDependencies: { babel: '^5.2.15' },
+18 silly publish   dependencies: { d3: '^3.5.5', react: '^0.13.2' },
+18 silly publish   readme: '# React + D3 Histogram\n\nHistogram component entirely rendered by React, using D3 to compute sizes, positions etc.\n\n## Example\n\n![Example histogram](/../master/screenshot.png?raw=true)\n\n## Build\n\nsh build.sh\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'c927588b90737bca2ba0d25dac4bb879c2cff1ec',
+18 silly publish   _id: 'react-d3-histogram@1.0.0',
+18 silly publish   _shasum: '2d5636285075c4a101416a362a31eaced9b42883',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name react-d3-histogram
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/react-d3-histogram
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/jamieenglish/.npm/react-d3-histogram/1.0.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/react-d3-histogram
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 21:41:02
+28 verbose request using bearer token for auth
+29 verbose request id a4726e4c7651062d
+30 http request PUT https://registry.npmjs.org/react-d3-histogram
+31 http 403 https://registry.npmjs.org/react-d3-histogram
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Tue, 05 May 2015 20:41:01 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lhr6328-LHR',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1430858460.662113,VS0,VE1092' }
+33 verbose request invalidating /Users/jamieenglish/.npm/registry.npmjs.org/react-d3-histogram on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : react-d3-histogram
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:234:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:372:22)
+35 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1310:14)
+35 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1258:12)
+35 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+35 verbose stack     at _stream_readable.js:919:16
+35 verbose stack     at process._tickCallback (node.js:419:13)
+36 verbose statusCode 403
+37 verbose pkgid react-d3-histogram
+38 verbose cwd /Users/jamieenglish/projects/react-d3-histogram
+39 error Darwin 14.3.0
+40 error argv "node" "/usr/local/bin/npm" "publish"
+41 error node v0.10.28
+42 error npm  v2.1.7
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0." : react-d3-histogram
+45 error If you need help, you may report this error at:
+45 error     <http://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
