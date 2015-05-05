@@ -1,0 +1,23 @@
+{
+  "name": "react-d3-histogram",
+  "version": "1.0.0",
+  "description": "Histogram component entirely rendered by React, using D3 to compute sizes, positions etc.",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel --stage 0 --out-dir dist src",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/english/react-d3-histogram.git"
+  },
+  "author": "Jamie English",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/english/react-d3-histogram/issues"
+  },
+  "homepage": "https://github.com/english/react-d3-histogram",
+  "devDependencies": {
+    "babel": "^5.2.15"
+  }
+}

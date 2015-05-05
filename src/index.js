@@ -10,7 +10,7 @@ function getXScale(data, width) {
     range([0, width]);
 }
 
-class Histogram extends React.Component {
+export default class Histogram extends React.Component {
   static propTypes = {
     top: React.PropTypes.number,
     right: React.PropTypes.number,
@@ -83,7 +83,7 @@ class Tick extends React.Component {
   }
 }
 
-class XAxis extends React.Component {
+export class XAxis extends React.Component {
   static propTypes = {
     height: React.PropTypes.number.isRequired,
     scale: React.PropTypes.func.isRequired
@@ -107,7 +107,7 @@ class XAxis extends React.Component {
   }
 }
 
-class Bar extends React.Component {
+export class Bar extends React.Component {
   static propTypes = {
     data: React.PropTypes.arrayOf(React.PropTypes.number).isRequired,
     xScale: React.PropTypes.func.isRequired,
